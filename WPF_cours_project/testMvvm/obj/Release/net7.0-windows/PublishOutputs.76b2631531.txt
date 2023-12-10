@@ -1,0 +1,10 @@
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\testMvvm.exe
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\testMvvm.runtimeconfig.json
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\testMvvm.pdb
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\runtimes\win-arm64\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\runtimes\win-x64\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\runtimes\win-x86\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\testMvvm.deps.json

@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+1. test
+=======
+2.test2
+>>>>>>> 94e8ac39400c961657feacddfefc1c28dd29c61d

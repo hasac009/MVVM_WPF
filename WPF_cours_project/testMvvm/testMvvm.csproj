@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Windows\bigcar.png" />
+    <None Remove="View\Windows\bigdriver.png" />
+    <None Remove="View\Windows\bigexit.png" />
+    <None Remove="View\Windows\bignumber.png" />
+    <None Remove="View\Windows\bigsp.png" />
+    <None Remove="View\Windows\bigwarehouse.png" />
+    <None Remove="View\Windows\Vector.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="5.8.0-alpha0098">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Npgsql" Version="8.0.0-rc.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="View\Icon\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Windows\bigcar.png" />
+    <Resource Include="View\Windows\bigdriver.png" />
+    <Resource Include="View\Windows\bigexit.png" />
+    <Resource Include="View\Windows\bignumber.png" />
+    <Resource Include="View\Windows\bigsp.png" />
+    <Resource Include="View\Windows\bigwarehouse.png" />
+    <Resource Include="View\Windows\Vector.png" />
+  </ItemGroup>
+
+</Project>

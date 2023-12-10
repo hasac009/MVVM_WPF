@@ -1,0 +1,8 @@
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\testMvvm.pdb
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\D3DCompiler_47_cor3.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\PenImc_cor3.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\PresentationNative_cor3.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\vcruntime140_cor3.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\wpfgfx_cor3.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\sni.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Release\net7.0-windows\publish\win-x64\testMvvm.exe

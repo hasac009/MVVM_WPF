@@ -1,0 +1,150 @@
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\testMvvm.exe
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\testMvvm.deps.json
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\testMvvm.runtimeconfig.json
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\testMvvm.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.g.cs
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.cache
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.lref
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.baml
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.g.resources
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfo.cs
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\refint\testMvvm.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.genruntimeconfig.cache
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\ref\testMvvm.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.g.cs
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.baml
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\EntityFramework.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CopyComplete
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\App.baml
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.g.cs
+C:\Users\user\Desktop\testMvvm\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.baml
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.exe
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.deps.json
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.runtimeconfig.json
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.AssemblyReference.cache
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.g.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.g.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.g.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.cache
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.lref
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\App.baml
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.baml
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.baml
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.baml
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.g.resources
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfoInputs.cache
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfo.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CopyComplete
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\refint\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.genruntimeconfig.cache
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\ref\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.Fody.CopyLocal.cache
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\DriverPage.g.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\SPpage.g.cs
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\DriverPage.baml
+C:\Users\Nazar\Desktop\работа\Курсовой проект Шаг\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\SPpage.baml
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.exe
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.deps.json
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.runtimeconfig.json
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.AssemblyReference.cache
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.g.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.g.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\DriverPage.g.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.g.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\SPpage.g.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.cache
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.lref
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\App.baml
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.baml
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.baml
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\DriverPage.baml
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.baml
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\SPpage.baml
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.g.resources
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfoInputs.cache
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfo.cs
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.Fody.CopyLocal.cache
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CopyComplete
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\refint\testMvvm.dll
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.genruntimeconfig.cache
+C:\Users\Nazar\Desktop\работа\Нароботки-муссор\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\ref\testMvvm.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.exe
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.deps.json
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.runtimeconfig.json
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.AssemblyReference.cache
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.g.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.g.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\DriverPage.g.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.g.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\SPpage.g.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.cache
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm_MarkupCompile.lref
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\App.baml
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\ListCarPage.baml
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindow.baml
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\DriverPage.baml
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\MainWindow.baml
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\SPpage.baml
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.g.resources
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfoInputs.cache
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfo.cs
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.Fody.CopyLocal.cache
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CopyComplete
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\refint\testMvvm.dll
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.pdb
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.genruntimeconfig.cache
+C:\Users\Nazar\Desktop\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\ref\testMvvm.dll
