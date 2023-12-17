@@ -12,5 +12,10 @@ namespace testMvvm.View
     public static class DataStorag
     {
         public static ObservableCollection<Car> Cars { get; } = new ObservableCollection<Car>();
+
+        public static void Clear()
+        {
+            Cars.Clear();
+        }
     }
 }

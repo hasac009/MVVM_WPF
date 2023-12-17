@@ -18,12 +18,13 @@ namespace testMvvm.ViewModels
         {
             connectString = $"Host={host};Database={database};Username={username};Password={password}";
             connection = new NpgsqlConnection(connectString);
-            
+           
             GetCarsFromTable();
         }
 
         public void GetCarsFromTable()
         {
+            DataStorag.Clear();
             connection.Open();
             using (var command = new NpgsqlCommand("SELECT * FROM cars3", connection))
             {

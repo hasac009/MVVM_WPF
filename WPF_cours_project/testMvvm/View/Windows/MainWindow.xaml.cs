@@ -33,6 +33,7 @@ namespace testMvvm
         private void Button_Click(object sender, RoutedEventArgs e)
         {
            
+
             MainFraim.Content = new ListCarPage();
         }
 

@@ -48,7 +48,8 @@ namespace testMvvm.View.Windows
             string imageFileName = System.IO.Path.GetFileName(imagePath);
             string destinationPath = System.IO.Path.Combine(projectDirectory, imageFileName);
             System.IO.File.Copy(imagePath, destinationPath, true);
-            car.ImagePathCar = destinationPath;
+            car.ImagePathCar = destinationPath; 
+
             DataStorag.Cars.Add(car);
             db.InsertCarIntoTable(car);
 

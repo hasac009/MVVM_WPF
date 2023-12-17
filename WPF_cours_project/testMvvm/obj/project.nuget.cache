@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cJAeGi+fFxDBIIJo1JNjSv2VQ1TGBHv+wCCjsa+hMKgLx3JDgauGZVboD2qMiRucxWT+M3xb9evdsLjmySF5+w==",
+  "dgSpecHash": "8CibPkhRCyn7g11Eu70d6ClftddQHfY16lesdhr/btc0ijJdGNE5FFPQmTY1/h6VSfZN54EdrramqEV/hR4lYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nazar\\Desktop\\работа\\курсовой проект шаг\\WPF_cours_project\\testMvvm\\testMvvm.csproj",
+  "projectFilePath": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\testMvvm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nazar\\.nuget\\packages\\costura.fody\\5.8.0-alpha0098\\costura.fody.5.8.0-alpha0098.nupkg.sha512",
     "C:\\Users\\Nazar\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

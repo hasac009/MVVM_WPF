@@ -18,8 +18,8 @@ namespace testMvvm.ViewModels
     internal class MainWindowModel : ViewModel
     {
         #region Свойства
-        DbTools dbTools= new DbTools("localhost", "MyTestBase", "postgres", "123");
-        
+        DbTools dbTools = new DbTools("localhost", "MyTestBase", "postgres", "123");
+
 
         #region Заголовок окна
 
@@ -33,19 +33,19 @@ namespace testMvvm.ViewModels
 
         #endregion
 
-        #region Коллекция кнопок
-        private ObservableCollection<Button> buttons= new ObservableCollection<Button>();
+        //#region Коллекция кнопок
+        //private ObservableCollection<Button> buttons= new ObservableCollection<Button>();
 
-        public ObservableCollection<Button> Buttons
-        {
-            get => buttons;
-            set => Set(ref buttons, value);
-        }
+        //public ObservableCollection<Button> Buttons
+        //{
+        //    get => buttons;
+        //    set => Set(ref buttons, value);
+        //}
+        
+        //#endregion
 
         #endregion
-
-        #endregion
-
+        
         #region Команды
 
         public ICommand CreatAddWindowCommand { get; set; }
@@ -68,7 +68,8 @@ namespace testMvvm.ViewModels
         private void OnLoadDbCommandExecute(object o)
         {
 
-             dbTools = new DbTools("localhost","MyTestBase","postgres","123");
+           dbTools = new DbTools("localhost", "MyTestBase", "postgres", "123");
+            
 
         }
 
@@ -81,7 +82,7 @@ namespace testMvvm.ViewModels
             
 
         }
-
+        
 
 
 
