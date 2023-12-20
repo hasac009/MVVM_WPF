@@ -894,5 +894,167 @@
 
 
 
+        <LinearGradientBrush x:Key="cs_Background" StartPoint="0,0" EndPoint="0,5">
+            <GradientStop Color="#F4E8DE" Offset="0.0"/>
+            <GradientStop Color="#F4E8DE" Offset="0.5"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="cs_PopupBackground" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="#DAD1BD" Offset="0.0"/>
+            <GradientStop Color="#F4E8DE" Offset="1.2"/>
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="cs_BackgroundLayer" Color="#FFF5ECEB" Opacity="0.2"/>
+
+        <SolidColorBrush x:Key="cs_BorderBrush" Color="Orange"/>
+
+        <SolidColorBrush x:Key="cs_Clouds" Color="Orange"/>
+
+        <SolidColorBrush x:Key="cs_Watermark" Color="#FFC2BBBA"/>
+
+        <SolidColorBrush x:Key="cs_PinkSoft" Color="#FF0A5d"/>
+
+        <SolidColorBrush x:Key="cs_TextColor" Color="#FF0A5d"/>
+
+        <SolidColorBrush x:Key="cs_RBBackground" Color="Transparent"/>
+
+
+        <ControlTemplate x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+                <Border x:Name="Border" 
+                 Grid.ColumnSpan="2"
+                 CornerRadius="5"
+                 BorderBrush="{StaticResource cs_BorderBrush}" 
+                 BorderThickness="2"
+                 SnapsToDevicePixels="true">
+                </Border>
+                <Border Grid.Column="1">
+                    <Path x:Name="Arrow" 
+                   Data="F1 M 0,0 L 2.667,2.66665 L 5.3334,0 L 5.3334,-1.78168 L 2.6667,0.88501 L0,-1.78168 L0,0 Z" 
+                   Fill="{StaticResource cs_Clouds}" 
+                   Stretch="Fill"
+                   Height="7"
+                   Width="10"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+                </Border>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="{StaticResource cs_PinkSoft}" TargetName="Border"/>
+                    <Setter Property="Fill" Value="{StaticResource cs_PinkSoft}" TargetName="Arrow"/>
+                </Trigger>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="{StaticResource cs_PinkSoft}" TargetName="Border"/>
+                    <Setter Property="BorderThickness" Value="0.5 0.5 0.5 3" TargetName="Border"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="ComboBoxTextBox" TargetType="{x:Type TextBox}">
+            <Border x:Name="PART_ContentHost"
+             Focusable="False"
+             Background="{TemplateBinding Background}"/>
+        </ControlTemplate>
+
+        <Style x:Key="ComboBoxStyle1" TargetType="{x:Type ComboBox}">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontFamily" Value="Roboto"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource cs_Clouds}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0 10 0 0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid>
+                            <ToggleButton x:Name="ToggleButton"
+                                   Template="{StaticResource ComboBoxToggleButton}"
+                                   Grid.Column="2"
+                                   Focusable="False"
+                                   ClickMode="Press"
+                                   IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            <ContentPresenter x:Name="ContentSite"
+                                       IsHitTestVisible="False"
+                                       Content="{TemplateBinding SelectionBoxItem}"
+                                       ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                       ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                       Margin="11 0 25 0"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       IsEnabled="True"/>
+                            <Label x:Name="Watermark"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left"
+                            Foreground="{StaticResource cs_Watermark}"
+                            Visibility="Collapsed"
+                            Padding="10 0 0 0"
+                            Content="{TemplateBinding Tag}"
+                            FontFamily="Roboto"
+                            FontSize="11"/>
+                            <TextBox x:Name="PART_EditableTextBox"
+                              Template="{StaticResource ComboBoxTextBox}"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Center"
+                              Focusable="True"
+                              Visibility="Hidden"/>
+                            <Popup x:Name="Popup"
+                            Placement="Bottom"
+                            IsOpen="{TemplateBinding IsDropDownOpen}"
+                            AllowsTransparency="True"
+                            Focusable="False"
+                            PopupAnimation="Slide">
+                                <Grid x:Name="DropDown"
+                               SnapsToDevicePixels="True"
+                               MinWidth="{TemplateBinding ActualWidth}"
+                               MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                    <Border x:Name="DropDownBorder"
+                                     BorderThickness="1"
+                                     BorderBrush="{StaticResource cs_Background}"
+                                     Background="{StaticResource cs_PopupBackground}"/>
+                                    <ScrollViewer Margin="4 6 4 6"
+                                           SnapsToDevicePixels="True"
+                                           OverridesDefaultStyle="True"
+                                           Foreground="{StaticResource cs_TextColor}"
+                                           FontFamily="Roboto"
+                                           FontSize="11"/>
+                                    <StackPanel IsItemsHost="True"
+                                         KeyboardNavigation.DirectionalNavigation="Contained">
+
+                                    </StackPanel>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Text" Value=""/>
+                                </MultiTrigger.Conditions>
+                                <Setter Property="Visibility" Value="Visible" TargetName="Watermark"/>
+                            </MultiTrigger>
+                            <Trigger Property="HasItems" Value="False">
+                                <Setter TargetName="DropDownBorder" Property="MinHeight" Value="95"/>
+                            </Trigger>
+                            <Trigger Property="IsGrouping" Value="True">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
+                            </Trigger>
+                            <Trigger SourceName="Popup" Property="AllowsTransparency" Value="True">
+                                <Setter TargetName="DropDownBorder" Property="CornerRadius" Value="4"/>
+                                <Setter TargetName="DropDownBorder" Property="Margin" Value="0 2 0 0"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+
     </Application.Resources>
 </Application>

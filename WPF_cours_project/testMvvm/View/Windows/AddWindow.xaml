@@ -21,6 +21,11 @@
         <TextBox x:Name="TNumberCar" Style="{StaticResource tbox_numberCar}" Tag="Car number" Margin="0,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278" Height="35"/>
         <Button Content="Load" FontSize="20" Style="{StaticResource MyButtonStyle}" Click="Button_Click2" Margin="0,328,0,0" Height="35" Width="128" />
         <Button Content="x" FontSize="20" Style="{StaticResource MyButtonStyle}" Click="Button_Click_1" Margin="413,10,0,0" Height="29" Width="27" HorizontalAlignment="Left" />
+        <ComboBox Margin="86,275,111,136" Style="{DynamicResource ComboBoxStyle1}">
+            <ComboBoxItem Content="- None -"/>
+            <ComboBoxItem Content="Men"/>
+            <ComboBoxItem Content="Woman"/>
+        </ComboBox>
 
 
     </Grid>
