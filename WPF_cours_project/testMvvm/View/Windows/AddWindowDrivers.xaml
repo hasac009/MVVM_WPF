@@ -1,0 +1,24 @@
+﻿<Window x:Class="testMvvm.View.Windows.AddWindowDrivers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testMvvm.View.Windows"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="450" Width="450" ResizeMode="NoResize" Background="Transparent" WindowStyle="None">
+    <Grid Background="Transparent">
+        <Border Background="#F4E8DE" MouseDown="Border_MouseDown" >
+
+
+
+
+
+        </Border>
+        <Button Content="Add" FontSize="20" Style="{StaticResource MyButtonStyle}" Margin="0,379,0,0" Height="35" Width="128" Click="Button_Click"/>
+        <TextBox x:Name="DriverName" Style="{StaticResource tbox_nameCar}" Tag="Name" Margin="0,118,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278" Height="35"/>
+        <TextBox x:Name="DriverPhone" Style="{StaticResource tbox_numberCar}" Tag="Phone" Margin="0,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278" Height="35"/>
+        <Button Content="x" FontSize="20" Style="{StaticResource MyButtonStyle}" Click="Button_Click_1" Margin="413,10,0,0" Height="29" Width="27" HorizontalAlignment="Left" />
+
+
+    </Grid>
+</Window>

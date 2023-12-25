@@ -39,15 +39,7 @@
                         <StaticResource ResourceKey="SlideBtnStyle"/>
                     </Button.Template>
                 </Button>
-                <Button Content="SP" Click="Button_Click_1" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="48" Width="158">
-                    <Button.Resources>
-                        <ImageSource x:Key="img">bigsp.png</ImageSource>
-                    </Button.Resources>
-                    <Button.Template>
-                        <StaticResource ResourceKey="SlideBtnStyle"/>
-                    </Button.Template>
-                </Button>
-                <Button Content="Storage" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Height="48" Width="158">
+                <Button Content="Storage" Click="Button_Click_1" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="48" Width="158">
                     <Button.Resources>
                         <ImageSource x:Key="img">bigwarehouse.png</ImageSource>
                     </Button.Resources>
@@ -55,7 +47,7 @@
                         <StaticResource ResourceKey="SlideBtnStyle"/>
                     </Button.Template>
                 </Button>
-                <Image Source="/View/Windows/bigexit.png" Height="53" Width="70" Margin="-30 180 50 0" MouseDown="Image_MouseDown"/>
+                <Image Source="/View/Windows/bigexit.png" Height="50" Width="62" Margin="-30 180 50 0" MouseDown="Image_MouseDown"/>
             </StackPanel>
         </Border>
 

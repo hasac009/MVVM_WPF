@@ -186,4 +186,7 @@ C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-wind
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.pdb
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.genruntimeconfig.cache
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\ref\testMvvm.dll
-C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\Style\ComboBoxStyles.baml
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowDrivers.g.cs
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowDrivers.baml
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowStorage.g.cs
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowStorage.baml

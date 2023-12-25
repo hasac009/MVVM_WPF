@@ -8,6 +8,7 @@ namespace testMvvm.Model
 {
     public  class Car
     {
+        public int Id { get; set; }
         public string name { get; set; }
         public string number { get; set; }
         public string ImagePathCar { get; set; }

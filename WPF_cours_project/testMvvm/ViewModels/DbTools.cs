@@ -20,6 +20,8 @@ namespace testMvvm.ViewModels
             connection = new NpgsqlConnection(connectString);
            
             GetCarsFromTable();
+            GetDriversFromTable();
+            GetSpFromTable();
         }
 
         public void GetCarsFromTable()
@@ -34,6 +36,7 @@ namespace testMvvm.ViewModels
                     {
                         Car car = new Car
                         {
+                            Id = reader.GetOrdinal("id"),
                             name = reader.GetString(reader.GetOrdinal("name")),
                             number = reader.GetString(reader.GetOrdinal("number")),
                             ImagePathCar = reader.GetString(reader.GetOrdinal("image")),
@@ -67,6 +70,89 @@ namespace testMvvm.ViewModels
                 command.Parameters.AddWithValue("@datatonext", car.dataTOnext ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@datact", car.dataCT ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@datactnext", car.dataCTnext ?? (object)DBNull.Value);
+
+                command.ExecuteNonQuery();
+            }
+
+            connection.Close();
+        }
+
+
+        public void GetDriversFromTable()
+        {
+            DataStorag.ClearDrivers(); 
+            connection.Open();
+            using (var command = new NpgsqlCommand("SELECT * FROM drivers", connection))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Driver driver = new Driver
+                        {
+                            id = reader.GetInt32(reader.GetOrdinal("id")),
+                            name = reader.GetString(reader.GetOrdinal("name")),
+                            phone = reader.GetString(reader.GetOrdinal("phone")),
+                            car_id = reader.GetInt32(reader.GetOrdinal("car_id"))
+                        };
+
+                        DataStorag.Drivers.Add(driver);
+                    }
+                }
+            }
+
+            connection.Close();
+        }
+        public void InsertDriverIntoTable(Driver driver)
+        {
+            connection.Open();
+            using (var command = new NpgsqlCommand("INSERT INTO drivers (name, phone) " +
+                                                   "VALUES (@name, @phone)", connection))
+            {
+                command.Parameters.AddWithValue("@name", driver.name);
+                command.Parameters.AddWithValue("@phone", driver.phone);
+
+                command.ExecuteNonQuery();
+            }
+
+            connection.Close();
+        }
+
+
+
+        public void GetSpFromTable()
+        {
+            DataStorag.ClearSP();
+            connection.Open();
+            using (var command = new NpgsqlCommand("SELECT * FROM sp", connection))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        SparePart sp = new SparePart
+                        {
+                           
+                            name = reader.GetString(reader.GetOrdinal("name")),
+                            count = reader.GetInt32(reader.GetOrdinal("count")),
+                            car_id = reader.GetInt32(reader.GetOrdinal("car_id"))
+                        };
+
+                        DataStorag.SpareParts.Add(sp);
+                    }
+                }
+            }
+
+            connection.Close();
+        }
+        public void InsertSpIntoTable(SparePart sp)
+        {
+            connection.Open();
+            using (var command = new NpgsqlCommand("INSERT INTO sp (name, count) " +
+                                                   "VALUES (@name, @count)", connection))
+            {
+                command.Parameters.AddWithValue("@name", sp.name);
+                command.Parameters.AddWithValue("@count", sp.count);
 
                 command.ExecuteNonQuery();
             }

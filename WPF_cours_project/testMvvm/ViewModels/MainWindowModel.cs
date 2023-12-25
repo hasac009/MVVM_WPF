@@ -33,16 +33,7 @@ namespace testMvvm.ViewModels
 
         #endregion
 
-        //#region Коллекция кнопок
-        //private ObservableCollection<Button> buttons= new ObservableCollection<Button>();
-
-        //public ObservableCollection<Button> Buttons
-        //{
-        //    get => buttons;
-        //    set => Set(ref buttons, value);
-        //}
-
-        //#endregion
+        
 
         #endregion
 
@@ -71,8 +62,8 @@ namespace testMvvm.ViewModels
         private void OnCreatAddWindowDriversCommandExecute(object o)
         {
 
-            AddWindow addWindow = new AddWindow(dbTools);
-            addWindow.Show();
+            AddWindowDrivers Window = new AddWindowDrivers(dbTools);
+            Window.Show();
 
         }
         #endregion
@@ -85,7 +76,7 @@ namespace testMvvm.ViewModels
         private void OnCreatAddWindowSPCommandExecute(object o)
         {
 
-            AddWindow addWindow = new AddWindow(dbTools);
+            AddWindowStorage addWindow = new AddWindowStorage(dbTools);
             addWindow.Show();
 
         }

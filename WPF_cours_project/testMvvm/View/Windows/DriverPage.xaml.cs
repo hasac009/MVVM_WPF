@@ -23,6 +23,12 @@ namespace testMvvm.View.Windows
         public DriverPage()
         {
             InitializeComponent();
+            MyDG.ItemsSource = DataStorag.Drivers;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

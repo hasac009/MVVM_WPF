@@ -23,6 +23,17 @@ namespace testMvvm.View.Windows
         public SPpage()
         {
             InitializeComponent();
+            
+        }
+
+        private void MyDG_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
