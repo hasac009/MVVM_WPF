@@ -132,7 +132,7 @@ namespace testMvvm.ViewModels
                     {
                         SparePart sp = new SparePart
                         {
-                           
+                            Id = reader.GetInt32(reader.GetOrdinal("id")),
                             name = reader.GetString(reader.GetOrdinal("name")),
                             count = reader.GetInt32(reader.GetOrdinal("count")),
                             car_id = reader.GetInt32(reader.GetOrdinal("car_id"))
@@ -158,6 +158,12 @@ namespace testMvvm.ViewModels
             }
 
             connection.Close();
+        }
+
+
+        public static  Car GetCar(string car_namber)
+        {
+            return DataStorag.Cars.FirstOrDefault(x => x.number == car_namber);
         }
 
     }

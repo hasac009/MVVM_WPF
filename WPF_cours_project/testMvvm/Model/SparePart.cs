@@ -8,6 +8,7 @@ namespace testMvvm.Model
 {
     public class SparePart
     {
+       public int Id { get; set; }
        public  string name {  get; set; }
 
        public int count { get; set; }

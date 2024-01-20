@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\App.xaml
-7-1532384995
+8-1694338912
 
-201929445286
+21961819752
 2041865894005
-View\ListCarPage.xaml;View\Windows\AddWindow.xaml;View\Windows\AddWindowDrivers.xaml;View\Windows\AddWindowStorage.xaml;View\Windows\DriverPage.xaml;View\Windows\MainWindow.xaml;View\Windows\SPpage.xaml;
+View\ListCarPage.xaml;View\Windows\AddWindow.xaml;View\Windows\AddWindowDrivers.xaml;View\Windows\AddWindowStorage.xaml;View\Windows\DriverPage.xaml;View\Windows\InfoCarWindow.xaml;View\Windows\MainWindow.xaml;View\Windows\SPpage.xaml;
 
 False
 

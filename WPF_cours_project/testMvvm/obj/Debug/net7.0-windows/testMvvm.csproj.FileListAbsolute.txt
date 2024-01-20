@@ -190,3 +190,5 @@ C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-wind
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowDrivers.baml
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowStorage.g.cs
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowStorage.baml
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\InfoCarWindow.g.cs
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\InfoCarWindow.baml

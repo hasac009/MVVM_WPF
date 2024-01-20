@@ -82,6 +82,23 @@ namespace testMvvm.ViewModels
         }
         #endregion
 
+
+
+
+        #region InfoCarWindow
+        public ICommand CreatInfoCarWindow { get; set; }
+
+        private bool CanCreatInfoCarWindowExecute(object o) => true;
+
+        private void OnCreatInfoCarWindowExecute(object o)
+        {
+
+            AddWindowStorage addWindow = new AddWindowStorage(dbTools);
+            addWindow.Show();
+
+        }
+        #endregion
+
         public ICommand LoadDbCommand { get; set; }
 
         private bool CanLoadDbCommandExecute(object o) => true;
@@ -101,7 +118,7 @@ namespace testMvvm.ViewModels
             CreatAddWindowCommand = new LambdaCommand(OnCreatAddWindowCommandExecute, CanCreatAddWindowCommandExecute);
             CreatAddWindowDriversCommand = new LambdaCommand(OnCreatAddWindowDriversCommandExecute, CanCreatAddWindowDriversCommandExecute);
             CreatAddWindowSPCommand = new LambdaCommand(OnCreatAddWindowSPCommandExecute, CanCreatAddWindowSPCommandExecute);
-
+            CreatInfoCarWindow = new LambdaCommand(OnCreatInfoCarWindowExecute, CanCreatInfoCarWindowExecute);
 
             LoadDbCommand = new LambdaCommand(OnLoadDbCommandExecute, CanLoadDbCommandExecute);
             

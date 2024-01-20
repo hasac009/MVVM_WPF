@@ -29,5 +29,7 @@ namespace testMvvm.View
         {
             SpareParts.Clear();
         }
+
+
     }
 }

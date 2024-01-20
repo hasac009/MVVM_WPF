@@ -24,6 +24,9 @@
     <Compile Update="View\Windows\DriverPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Windows\InfoCarWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Windows\SPpage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -42,6 +45,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Windows\DriverPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\InfoCarWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Windows\MainWindow.xaml">
