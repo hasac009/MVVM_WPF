@@ -25,7 +25,7 @@ namespace testMvvm.View.Windows
         {
             InitializeComponent();
             car = carInput;
-            DisplayImage(car.ImagePathCar);
+            Display(car.ImagePathCar);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,7 +34,7 @@ namespace testMvvm.View.Windows
         }
 
 
-        private void DisplayImage(string imagePath)
+        private void Display(string imagePath)
         {
             try
             {
@@ -45,6 +45,16 @@ namespace testMvvm.View.Windows
             {
                 MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
+
+            LableDriverName.Content = car.driver;
+
+            LableDateTO.Content = car.dataTO;
+            LableDateNextTO.Content = car.dataTOnext;
+
+            LableDateCT.Content = car.dataCT;
+            LableDateNextCT.Content = car.dataCTnext;
+
         }
     }
 }

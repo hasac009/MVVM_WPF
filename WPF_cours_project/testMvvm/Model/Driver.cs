@@ -15,5 +15,11 @@ namespace testMvvm.Model
 
         public int car_id { get; set; }
 
+
+        public override string ToString()
+        {
+            return name;
+        }
+
     }
 }

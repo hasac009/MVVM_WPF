@@ -32,7 +32,9 @@ namespace testMvvm.View.Windows
         {
             InitializeComponent();
             db = _db;
-            
+            GetDrivers();
+
+
 
 
         }
@@ -43,6 +45,11 @@ namespace testMvvm.View.Windows
             Car car = new Car();
             car.name = TNameCar.Text;
             car.number = TNumberCar.Text;
+            car.dataTO = DataTO.ToString();
+            car.dataTOnext = DataTONext.ToString();
+            car.dataCT = DataCT.ToString();
+            car.dataCTnext = DataCTNext.ToString();
+            car.driver = ComboBox1.Text;
 
             string projectDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             string imageFileName = System.IO.Path.GetFileName(imagePath);
@@ -80,6 +87,15 @@ namespace testMvvm.View.Windows
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+
+        private void GetDrivers()
+        {
+            foreach(Driver d in DataStorag.Drivers)
+            {
+                ComboBox1.Items.Add(d);
+            }
         }
     }
 }
