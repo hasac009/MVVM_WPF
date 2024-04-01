@@ -8,7 +8,7 @@
         Title="InfoCarWindow" Height="450" Width="800">
     <Grid Background="#DAD1BD" >
         <Image x:Name="ImageControl" Margin="10,10,499,237"/>
-        <Grid Background="#F4E8DE"  Margin="372,10,161,105">
+        <Grid Background="#F4E8DE"  Margin="372,10,118,173" >
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -32,5 +32,8 @@
             <Label x:Name="LableDateNextCT" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Grid.Row="4"/>
 
         </Grid>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="10,306,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="118" Width="495"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="465,281,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
     </Grid>
 </Window>

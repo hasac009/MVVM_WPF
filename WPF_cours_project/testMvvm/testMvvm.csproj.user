@@ -12,6 +12,9 @@
     <Compile Update="View\ListCarPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Windows\AddSpOnCar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Windows\AddWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +36,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\ListCarPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\AddSpOnCar.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Windows\AddWindow.xaml">

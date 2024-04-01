@@ -180,7 +180,6 @@ C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-wind
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.AssemblyInfo.cs
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CoreCompileInputs.cache
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.Fody.CopyLocal.cache
-C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.CopyComplete
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.dll
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\refint\testMvvm.dll
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.pdb
@@ -192,3 +191,7 @@ C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-wind
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddWindowStorage.baml
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\InfoCarWindow.g.cs
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\InfoCarWindow.baml
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.sourcelink.json
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.Up2Date
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddSpOnCar.g.cs
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\AddSpOnCar.baml

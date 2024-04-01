@@ -56,5 +56,11 @@ namespace testMvvm.View.Windows
             LableDateNextCT.Content = car.dataCTnext;
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            AddSpOnCar window = new AddSpOnCar(car);
+            window.Show();
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace testMvvm.ViewModels
 {
    public  class DbTools
     {
-        private NpgsqlConnection connection;
+        private static NpgsqlConnection connection;
         private string connectString;
 
         public DbTools(string host, string database, string username, string password) 
@@ -165,6 +166,23 @@ namespace testMvvm.ViewModels
         {
             return DataStorag.Cars.FirstOrDefault(x => x.number == car_namber);
         }
+
+        public static void UpdateSparePartInDatabase(SparePart sp)
+        {
+            connection.Open();
+            using (var command = new NpgsqlCommand("UPDATE sp SET name = @name, count = @count, car_id = @car_id WHERE id = @id", connection))
+            {
+                command.Parameters.AddWithValue("@name", sp.name);
+                command.Parameters.AddWithValue("@count", sp.count);
+                command.Parameters.AddWithValue("@car_id", sp.car_id);
+                command.Parameters.AddWithValue("@id", sp.Id);
+
+                command.ExecuteNonQuery();
+            }
+            connection.Close();
+        }
+
+        
 
     }
 }

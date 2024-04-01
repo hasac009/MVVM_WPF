@@ -16,9 +16,7 @@ using testMvvm.ViewModels;
 
 namespace testMvvm.View.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для AddWindowStorage.xaml
-    /// </summary>
+   
     public partial class AddWindowStorage : Window
     {
         private DbTools db;
