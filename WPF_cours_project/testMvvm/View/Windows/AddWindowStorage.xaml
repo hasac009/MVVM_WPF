@@ -8,6 +8,12 @@
         Title="AddWindow" Height="450" Width="450" ResizeMode="NoResize" Background="Transparent" WindowStyle="None">
     <Grid Background="Transparent">
         <Border Background="#F4E8DE" MouseDown="Border_MouseDown" >
+            <ComboBox x:Name="ComboBox1"  Margin="86,225,0,190" Style="{DynamicResource ComboBoxStyle1}" HorizontalAlignment="Left" Width="62">
+                <ComboBoxItem Content="- None -"/>
+                <ComboBoxItem Content="item"/>
+                <ComboBoxItem Content="liter"/>
+
+            </ComboBox>
 
 
 

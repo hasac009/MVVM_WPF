@@ -16,23 +16,24 @@ using System.Windows.Shapes;
 using testMvvm.ViewModels;
 using testMvvm.View;
 using testMvvm.Model;
+using System.Data;
 
 namespace testMvvm.View.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для AddWindow.xaml
-    /// </summary>
+    
     public partial class AddWindow : Window
     {
         
         private string imagePath = string.Empty;
 
-        private DbTools db;
-        public AddWindow(DbTools _db)
+        private Gareg cars;
+        private Office drivers;
+        public AddWindow(Gareg cars, Office drivers)
         {
-            InitializeComponent();
-            db = _db;
-            GetDrivers();
+             InitializeComponent();
+             this.cars = cars;
+             this.drivers = drivers;
+             GetDrivers();
 
 
 
@@ -45,11 +46,15 @@ namespace testMvvm.View.Windows
             Car car = new Car();
             car.name = TNameCar.Text;
             car.number = TNumberCar.Text;
-            car.dataTO = DataTO.ToString();
-            car.dataTOnext = DataTONext.ToString();
-            car.dataCT = DataCT.ToString();
-            car.dataCTnext = DataCTNext.ToString();
+            car.dataTO = ConvertDate(DataTO.ToString()).ToString("dd.MM.yyyy");
+            car.dataTOnext = ConvertDate(DataTO.ToString()).AddYears(int.Parse(DataNext.Text)).ToString("dd.MM.yyyy");
+
+            car.dataCT = ConvertDate(DataCT.ToString()).ToString("dd.MM.yyyy");
+            car.dataCTnext = ConvertDate(DataCT.ToString()).AddYears(int.Parse(DataNext.Text)).ToString("dd.MM.yyyy"); ;
             car.driver = ComboBox1.Text;
+            
+
+
 
             string projectDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             string imageFileName = System.IO.Path.GetFileName(imagePath);
@@ -57,12 +62,20 @@ namespace testMvvm.View.Windows
             System.IO.File.Copy(imagePath, destinationPath, true);
             car.ImagePathCar = destinationPath; 
 
-            DataStorag.Cars.Add(car);
-            db.InsertCarIntoTable(car);
+           
+            cars.Add(car);
 
             this.Close();
         }
 
+        private DateTime ConvertDate(string date)
+        {
+            DateTime curDate = DateTime.Parse(date);
+
+            return curDate.Date;
+        }
+
+        
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -92,7 +105,7 @@ namespace testMvvm.View.Windows
 
         private void GetDrivers()
         {
-            foreach(Driver d in DataStorag.Drivers)
+            foreach(Driver d in drivers.GetAll())
             {
                 ComboBox1.Items.Add(d);
             }

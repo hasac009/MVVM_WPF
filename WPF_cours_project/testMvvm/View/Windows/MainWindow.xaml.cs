@@ -22,6 +22,7 @@ namespace testMvvm
     
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace testMvvm
         {
            
 
-            MainFraim.Content = new ListCarPage();
+            
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -59,12 +60,17 @@ namespace testMvvm
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MainFraim.Content = new SPpage();
+           
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            MainFraim.Content = new DriverPage();
+            
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

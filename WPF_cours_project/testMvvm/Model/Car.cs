@@ -18,5 +18,7 @@ namespace testMvvm.Model
         public string? dataCT { get; set; }
         public string? dataCTnext { get; set; }
 
+        public bool status { get; set; }
+
     }
 }

@@ -19,11 +19,11 @@ namespace testMvvm.View.Windows
     
     public partial class AddWindowDrivers : Window
     {
-        private DbTools db;
-        public AddWindowDrivers(DbTools db)
+        private Office drivers;
+        public AddWindowDrivers(Office drivers)
         {
             InitializeComponent();
-            this.db = db;
+            this.drivers = drivers;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -31,7 +31,7 @@ namespace testMvvm.View.Windows
             Driver driver = new Driver();
             driver.name = DriverName.Text;
             driver.phone = DriverPhone.Text;
-            db.InsertDriverIntoTable(driver);
+            drivers.Add(driver);
             this.Close();
         }
 

@@ -7,10 +7,9 @@
         xmlns:local="clr-namespace:testMvvm"
         mc:Ignorable="d"
         Title="{Binding Title}" Height="600" Width="950" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
-    <!--<Window.DataContext>
+   <Window.DataContext>
         <vm:MainWindowModel/>
-    </Window.DataContext>-->
-
+    </Window.DataContext>
 
 
     <Grid Background="Transparent">
@@ -23,36 +22,37 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-
         <Border Background="#F4E8DE" Grid.Column="0"  BorderThickness="0" CornerRadius="10 0 0 10">
             <StackPanel>
-                <Button Content="Cars"  Template="{StaticResource SlideBtnStyle}" Click="Button_Click" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" Height="48" Width="158">
+                <Button Content="Cars" Template="{StaticResource SlideBtnStyle}" Command="{Binding showCarController}" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" Height="48" Width="158" Click="Button_Click_3">
                     <Button.Resources>
-                        <ImageSource x:Key="img">bigcar.png</ImageSource>
+                        <ImageSource x:Key="img">/View/Image/bigcar.png</ImageSource>
                     </Button.Resources>
+
                 </Button>
-                <Button Content="Drivers" Click="Button_Click_2" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="48" Width="158">
+                <Button Content="Drivers" Click="Button_Click_2" HorizontalAlignment="Center" Command="{Binding showDriverController}" VerticalAlignment="Top" Height="48" Width="158">
                     <Button.Resources>
-                        <ImageSource x:Key="img">bigdriver.png</ImageSource>
-                    </Button.Resources>
-                    <Button.Template>
-                        <StaticResource ResourceKey="SlideBtnStyle"/>
-                    </Button.Template>
-                </Button>
-                <Button Content="Storage" Click="Button_Click_1" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="48" Width="158">
-                    <Button.Resources>
-                        <ImageSource x:Key="img">bigwarehouse.png</ImageSource>
+                        <ImageSource x:Key="img">/View/Image/bigdriver.png</ImageSource>
                     </Button.Resources>
                     <Button.Template>
                         <StaticResource ResourceKey="SlideBtnStyle"/>
                     </Button.Template>
                 </Button>
-                <Image Source="/View/Windows/bigexit.png" Height="50" Width="62" Margin="-30 180 50 0" MouseDown="Image_MouseDown"/>
+                <Button Content="Storage" Click="Button_Click_1" HorizontalAlignment="Center" Command="{Binding showSpController}"  VerticalAlignment="Top" Height="48" Width="158">
+                    <Button.Resources>
+                        <ImageSource x:Key="img">/View/Image/bigwarehouse.png</ImageSource>
+                    </Button.Resources>
+                    <Button.Template>
+                        <StaticResource ResourceKey="SlideBtnStyle"/>
+                    </Button.Template>
+                </Button>
+                <Image Source="/View/Image/bigexit.png" Height="50" Width="62" Margin="-30 180 50 0" MouseDown="Image_MouseDown"/>
             </StackPanel>
         </Border>
-
+        
         <Border Grid.Column="1" Background="#DAD1BD" MouseDown="Border_MouseDown" CornerRadius="0 10 10 0">
-            <Frame Name="MainFraim" Grid.Column="1" NavigationUIVisibility="Hidden" Height="450" Width="700" Margin="40 40 40 40"/>
+            <ContentPresenter  Name="contentP" Margin="0,72,0,0" Content="{Binding Test}"></ContentPresenter>
+    
         </Border>
 
 

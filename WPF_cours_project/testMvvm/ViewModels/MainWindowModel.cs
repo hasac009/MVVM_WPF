@@ -12,13 +12,31 @@ using System.Windows.Controls;
 using testMvvm.Model;
 using System.Windows;
 using testMvvm.View;
+using testMvvm.View.UserControllers;
+using System.Reflection;
+using System.Diagnostics;
 
 namespace testMvvm.ViewModels
 {
     internal class MainWindowModel : ViewModel
     {
         #region Свойства
-        DbTools dbTools = new DbTools("localhost", "MyTestBase", "postgres", "123");
+        
+        private static string connectString = $"Host=localhost;Database=MyTestBase;Username=postgres;Password=123";
+        Gareg cars = new Gareg(connectString);
+        Office drivers = new Office(connectString); 
+        Storage SparePart = new Storage(connectString);
+       
+
+
+        private UserControl _Test = new EmptyControl();
+
+        public UserControl Test
+        {
+            get => _Test;
+            set => Set(ref _Test, value);
+        }
+
 
 
         #region Заголовок окна
@@ -33,11 +51,50 @@ namespace testMvvm.ViewModels
 
         #endregion
 
-        
+
 
         #endregion
 
         #region Команды
+        #region showCarController 
+        public ICommand showCarController { get; set; }
+
+        private bool CanshowCarControllerCommandExecute(object o) => true;
+
+        private void OnshowCarControllerCommandExecute(object o)
+        {
+            Test = new ListCarController(cars);
+            
+
+        }
+        #endregion
+
+        #region showSpController 
+        public ICommand showSpController { get; set; }
+
+        private bool CanshowSpControllerCommandExecute(object o) => true;
+
+        private void OnshowSpControllerCommandExecute(object o)
+        {
+            Test = new SPControler(SparePart);
+
+
+        }
+        #endregion
+
+        #region showDriverController 
+        public ICommand showDriverController { get; set; }
+
+        private bool CanshowDriverControllerCommandExecute(object o) => true;
+
+        private void OnshowDriverControllerCommandExecute(object o)
+        {
+            Test = new DriverControler(drivers);
+
+
+        }
+        #endregion
+
 
 
         #region addCars 
@@ -48,8 +105,23 @@ namespace testMvvm.ViewModels
         private void OnCreatAddWindowCommandExecute(object o)
         {
 
-            AddWindow addWindow = new AddWindow(dbTools);
+            AddWindow addWindow = new AddWindow(cars,drivers);
             addWindow.Show();
+
+        }
+        #endregion
+
+        #region delCar 
+        public ICommand delCarCommand { get; set; }
+
+        private bool CandelCarCommandExecute(object o) => true;
+
+        private void OndelCarCommandExecute(object o)
+        {
+            string content = o.ToString();
+            Debug.WriteLine(content.Substring(content.IndexOf('№') + 1).Trim());
+            cars.del(content.Substring(content.IndexOf('№') + 1).Trim());
+            cars.GetAll();
 
         }
         #endregion
@@ -62,7 +134,7 @@ namespace testMvvm.ViewModels
         private void OnCreatAddWindowDriversCommandExecute(object o)
         {
 
-            AddWindowDrivers Window = new AddWindowDrivers(dbTools);
+            AddWindowDrivers Window = new AddWindowDrivers(drivers);
             Window.Show();
 
         }
@@ -76,14 +148,16 @@ namespace testMvvm.ViewModels
         private void OnCreatAddWindowSPCommandExecute(object o)
         {
 
-            AddWindowStorage addWindow = new AddWindowStorage(dbTools);
+            AddWindowStorage addWindow = new AddWindowStorage(SparePart);
             addWindow.Show();
+           
+            
 
         }
         #endregion
 
 
-
+        
 
         #region InfoCarWindow
         public ICommand CreatInfoCarWindow { get; set; }
@@ -92,9 +166,13 @@ namespace testMvvm.ViewModels
 
         private void OnCreatInfoCarWindowExecute(object o)
         {
-
-            AddWindowStorage addWindow = new AddWindowStorage(dbTools);
-            addWindow.Show();
+            if (o is string textButton)
+            {
+                Car car = cars.GetCar(textButton); 
+                SparePart.GetPartsByCarId(car.Id);
+                InfoCarWindow carWindow = new InfoCarWindow(car, SparePart);
+                carWindow.Show();
+            }
 
         }
         #endregion
@@ -106,10 +184,12 @@ namespace testMvvm.ViewModels
         private void OnLoadDbCommandExecute(object o)
         {
 
-           dbTools = new DbTools("localhost", "MyTestBase", "postgres", "123");
-            
+           
+             
 
         }
+
+
 
         #endregion
         public MainWindowModel()
@@ -121,8 +201,12 @@ namespace testMvvm.ViewModels
             CreatInfoCarWindow = new LambdaCommand(OnCreatInfoCarWindowExecute, CanCreatInfoCarWindowExecute);
 
             LoadDbCommand = new LambdaCommand(OnLoadDbCommandExecute, CanLoadDbCommandExecute);
-            
 
+            showCarController = new LambdaCommand(OnshowCarControllerCommandExecute,CanshowCarControllerCommandExecute);
+            showSpController = new LambdaCommand(OnshowSpControllerCommandExecute, CanshowSpControllerCommandExecute);
+            showDriverController = new LambdaCommand(OnshowDriverControllerCommandExecute, CanshowDriverControllerCommandExecute);
+
+            delCarCommand = new LambdaCommand(OndelCarCommandExecute, CandelCarCommandExecute); 
         }
         
 

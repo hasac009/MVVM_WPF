@@ -4,36 +4,67 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:testMvvm.View.Windows"
+        xmlns:vm="clr-namespace:testMvvm.ViewModels"
         mc:Ignorable="d"
-        Title="InfoCarWindow" Height="450" Width="800">
-    <Grid Background="#DAD1BD" >
-        <Image x:Name="ImageControl" Margin="10,10,499,237"/>
-        <Grid Background="#F4E8DE"  Margin="372,10,118,173" >
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="17*"/>
-                <ColumnDefinition Width="15*"/>
-            </Grid.ColumnDefinitions>
-            <Label Content="Водитель : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="26" Width="70"/>
-            <Label Content="Дата ТО : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Margin="10,0,0,0" Height="26" Width="63"/>
-            <Label Content="Дата след. ТО : " HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="10,14,0,0" Height="26" Width="94"/>
-            <Label Content="Дата СТ : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Margin="10,0,0,0" Height="26" Width="62"/>
-            <Label Content="Дата след. CТ : " HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="4" Margin="10,14,0,0" Height="26" Width="94"/>
-            <Label x:Name="LableDriverName" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
-            <Label x:Name="LableDateTO" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="1"/>
-            <Label x:Name="LableDateCT" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="2"/>
-            <Label x:Name="LableDateNextTO" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Grid.Row="3"/>
-            <Label x:Name="LableDateNextCT" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Grid.Row="4"/>
+        Title="InfoCarWindow" ResizeMode="NoResize" Height="450" Width="800" WindowStyle="None" Background="Transparent" >
+    <Window.DataContext>
+        <vm:MainWindowModel/>
+    </Window.DataContext>
+    <Grid Background="Transparent">
 
-        </Grid>
-        
-        <TextBlock HorizontalAlignment="Left" Margin="10,306,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="118" Width="495"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="465,281,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Border CornerRadius="10" Background="#DAD1BD" MouseDown="Border_MouseDown">
+            <Grid>
+                <Button Style="{StaticResource MyButtonStyle}" Margin="763,5,0,0" Height="27" RenderTransformOrigin="0.5,0.5" Width="30" Content="X" HorizontalAlignment="Left" FontSize="14" Click="Button_Click_2" >
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                </Button>
+                <Image x:Name="ImageControl" Margin="11,44,498,203"/>
+                <Grid Background="#F4E8DE"  Margin="364,40,126,142" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="17*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Водитель : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="26" Width="70"/>
+                    <Label Content="Дата ТО : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Margin="10,0,0,0" Height="26" Width="63"/>
+                    <Label Content="Дата след. ТО : " HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="10,14,0,0" Height="26" Width="94"/>
+                    <Label Content="Дата СТ : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Margin="10,0,0,0" Height="26" Width="62"/>
+                    <Label Content="Дата след. CТ : " HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="4" Margin="10,14,0,0" Height="26" Width="94"/>
+                    <Label x:Name="LableDriverName" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                    <Label x:Name="LableDateTO" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="1"/>
+                    <Label x:Name="LableDateCT" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="2"/>
+                    <Label x:Name="LableDateNextTO" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Grid.Row="3"/>
+                    <Label x:Name="LableDateNextCT" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Grid.Row="4"/>
+
+                </Grid>
+
+                <DataGrid x:Name="MyDG"  
+                    RowStyle="{DynamicResource DataGridRowStyle1}"
+                    ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"
+                    CellStyle="{DynamicResource DataGridCellStyle1}"
+                    Style="{DynamicResource DataGridStyle1}" Margin="10,313,83,-263" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" Binding="{Binding name}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Count" Binding="{Binding count}" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+                <Button  Style="{StaticResource MyButtonStyle}" Content="add Spart" HorizontalAlignment="Left" Margin="685,316,0,0" Click="Button_Click_1" Height="30" Width="93" FontSize="15"/>
+            </Grid>
+        </Border>
     </Grid>
+
+
 </Window>

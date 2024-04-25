@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AddWindow" Height="500" Width="450" ResizeMode="NoResize" Background="Transparent" WindowStyle="None">
     <Grid Background="Transparent">
-        <Border Background="#F4E8DE" MouseDown="Border_MouseDown" >
+        <Border Background="#F4E8DE" MouseDown="Border_MouseDown" CornerRadius="16" >
 
 
 
@@ -15,19 +15,22 @@
 
         </Border>
 
-        <DatePicker x:Name="DataTO"  Tag="DataTO" Margin="88,158,0,290" CalendarStyle="{StaticResource DataPickerCalendarStyle}" Style="{StaticResource DataPickerStyle}" Width="254" HorizontalAlignment="Left"/>
-        <DatePicker x:Name="DataCT" Tag="DataCT" Margin="88,251,0,205" CalendarStyle="{StaticResource DataPickerCalendarStyle}" Style="{StaticResource DataPickerStyle}" Width="254" HorizontalAlignment="Left"/>
-        <Button Content="Add" FontSize="20" Style="{StaticResource MyButtonStyle}" Margin="0,455,0,0" Height="35" Width="128" Click="Button_Click"/>
-        <TextBox x:Name="TNameCar" Style="{StaticResource tbox_nameCar}" Tag="Car name" Margin="0,68,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278" Height="35"/>
-        <TextBox x:Name="TNumberCar" Style="{StaticResource tbox_numberCar}" Tag="Car number" Margin="0,119,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="278" Height="35"/>
-        <Button Content="Load" FontSize="20" Style="{StaticResource MyButtonStyle}" Click="Button_Click2" Margin="0,404,0,0" Height="35" Width="128" />
+        <DatePicker x:Name="DataTO"  Tag="DataTO" Margin="86,159,0,289" CalendarStyle="{StaticResource DataPickerCalendarStyle}" Style="{StaticResource DataPickerStyle}" Width="254" HorizontalAlignment="Left"/>
+        <DatePicker x:Name="DataCT" Tag="DataCT" Margin="86,215,0,241" CalendarStyle="{StaticResource DataPickerCalendarStyle}" Style="{StaticResource DataPickerStyle}" Width="254" HorizontalAlignment="Left"/>
+        <Button Content="Add" FontSize="20" Style="{StaticResource MyButtonStyle}" Margin="0,424,0,0" Height="35" Width="128" Click="Button_Click"/>
+        <TextBox x:Name="TNameCar" Style="{StaticResource tbox_nameCar}" Tag="Car name" Margin="86,66,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="250" Height="35" HorizontalAlignment="Left"/>
+        <TextBox x:Name="TNumberCar" Style="{StaticResource tbox_numberCar}" Tag="Car number" Margin="86,119,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="250" Height="35" HorizontalAlignment="Left"/>
+        <Button Content="Load" FontSize="20" Style="{StaticResource MyButtonStyle}" Click="Button_Click2" Margin="0,373,0,0" Height="35" Width="128" />
         <Button Content="x" FontSize="20" Style="{StaticResource MyButtonStyle}" Click="Button_Click_1" Margin="413,10,0,0" Height="29" Width="27" HorizontalAlignment="Left" />
-        <ComboBox x:Name="ComboBox1"  Margin="88,355,0,110" Style="{DynamicResource ComboBoxStyle1}" HorizontalAlignment="Left">
+        <ComboBox x:Name="ComboBox1"  Margin="86,264,0,201" Style="{DynamicResource ComboBoxStyle1}" HorizontalAlignment="Left">
             <ComboBoxItem Content="- None -"/>
-            
+
         </ComboBox>
-        <DatePicker x:Name="DataTONext" Tag="DataTONext" Margin="88,210,0,254" CalendarStyle="{StaticResource DataPickerCalendarStyle}" Style="{StaticResource DataPickerStyle}" Width="254" HorizontalAlignment="Left"/>
-        <DatePicker x:Name="DataCTNext"  Tag="DataCTNext" Margin="88,295,0,150" CalendarStyle="{StaticResource DataPickerCalendarStyle}" Style="{StaticResource DataPickerStyle}" Width="254" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="DataNext"  Margin="86,312,0,153" Style="{DynamicResource ComboBoxStyle1}" HorizontalAlignment="Left" Width="54">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+
+        </ComboBox>
 
 
     </Grid>

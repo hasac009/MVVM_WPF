@@ -15,6 +15,9 @@ namespace testMvvm.Model
 
        public int car_id { get; set; }
 
+       public string? type_sp {  get; set; }
+
+        public bool status { get; set; }
         public override string ToString()
         {
             return name;

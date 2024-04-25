@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testmvvm\\view\\windows\\addsponcar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|solutionrelative:testmvvm\\view\\windows\\addsponcar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|c:\\users\\nazar\\desktop\\mvvm_wpf\\wpf_cours_project\\testmvvm\\view\\usercontrollers\\spcontroler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|solutionrelative:testmvvm\\view\\usercontrollers\\spcontroler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testmvvm\\view\\windows\\addsponcar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|solutionrelative:testmvvm\\view\\windows\\addsponcar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|c:\\users\\nazar\\desktop\\mvvm_wpf\\wpf_cours_project\\testmvvm\\viewmodels\\dbtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|solutionrelative:testmvvm\\viewmodels\\dbtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testmvvm\\view\\windows\\infocarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|solutionrelative:testmvvm\\view\\windows\\infocarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testmvvm\\view\\datastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|solutionrelative:testmvvm\\view\\datastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|c:\\users\\nazar\\desktop\\mvvm_wpf\\wpf_cours_project\\testmvvm\\viewmodels\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44BA04C7-2A02-4F20-B452-85E2B646E6B0}|testMvvm\\testMvvm.csproj|solutionrelative:testmvvm\\viewmodels\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InfoCarWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\Windows\\InfoCarWindow.xaml.cs",
-              "RelativeDocumentMoniker": "testMvvm\\View\\Windows\\InfoCarWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\Windows\\InfoCarWindow.xaml.cs",
-              "RelativeToolTip": "testMvvm\\View\\Windows\\InfoCarWindow.xaml.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAcwD0AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T19:05:21.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DbTools.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\ViewModels\\DbTools.cs",
-              "RelativeDocumentMoniker": "testMvvm\\ViewModels\\DbTools.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\ViewModels\\DbTools.cs",
-              "RelativeToolTip": "testMvvm\\ViewModels\\DbTools.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAwwKgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T18:41:55.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddSpOnCar.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\Windows\\AddSpOnCar.xaml.cs",
-              "RelativeDocumentMoniker": "testMvvm\\View\\Windows\\AddSpOnCar.xaml.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\Windows\\AddSpOnCar.xaml.cs",
-              "RelativeToolTip": "testMvvm\\View\\Windows\\AddSpOnCar.xaml.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAcwCgAAAAAAAAA",
+              "Title": "Storage.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\ViewModels\\Storage.cs",
+              "RelativeDocumentMoniker": "testMvvm\\ViewModels\\Storage.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\ViewModels\\Storage.cs",
+              "RelativeToolTip": "testMvvm\\ViewModels\\Storage.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAlwJMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T19:46:17.152Z",
+              "WhenOpened": "2024-04-25T09:40:45.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddSpOnCar.xaml",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\Windows\\AddSpOnCar.xaml",
-              "RelativeDocumentMoniker": "testMvvm\\View\\Windows\\AddSpOnCar.xaml",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\Windows\\AddSpOnCar.xaml",
-              "RelativeToolTip": "testMvvm\\View\\Windows\\AddSpOnCar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-08T19:21:59.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DataStore.cs",
-              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\DataStore.cs",
-              "RelativeDocumentMoniker": "testMvvm\\View\\DataStore.cs",
-              "ToolTip": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\DataStore.cs",
-              "RelativeToolTip": "testMvvm\\View\\DataStore.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Title": "SPControler.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\UserControllers\\SPControler.xaml.cs",
+              "RelativeDocumentMoniker": "testMvvm\\View\\UserControllers\\SPControler.xaml.cs",
+              "ToolTip": "C:\\Users\\Nazar\\Desktop\\MVVM_WPF\\WPF_cours_project\\testMvvm\\View\\UserControllers\\SPControler.xaml.cs",
+              "RelativeToolTip": "testMvvm\\View\\UserControllers\\SPControler.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAiwCcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T19:06:14.799Z",
+              "WhenOpened": "2024-04-25T09:39:06.379Z",
               "EditorCaption": ""
             }
           ]

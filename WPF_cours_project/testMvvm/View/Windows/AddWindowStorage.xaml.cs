@@ -19,11 +19,11 @@ namespace testMvvm.View.Windows
    
     public partial class AddWindowStorage : Window
     {
-        private DbTools db;
-        public AddWindowStorage(DbTools db)
+        private Storage SparePart;
+        public AddWindowStorage(Storage SparePart)
         {
             InitializeComponent();
-            this.db = db;
+            this.SparePart = SparePart;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -31,7 +31,16 @@ namespace testMvvm.View.Windows
             SparePart sp = new SparePart();
             sp.name = NameSp.Text;
             sp.count = int.Parse(CountSP.Text);
-            db.InsertSpIntoTable(sp);
+            ComboBoxItem selectedItem = ComboBox1.SelectedItem as ComboBoxItem;
+
+            if (selectedItem != null)
+            {
+                
+                string selectedContent = selectedItem.Content.ToString();
+
+                sp.type_sp = selectedContent;
+            }
+            SparePart.Add(sp);
             this.Close();
 
         }

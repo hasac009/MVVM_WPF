@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,27 +22,53 @@ namespace testMvvm.View.Windows
     public partial class AddSpOnCar : Window
     {
         Car car;
-        public AddSpOnCar(Car car)
+        Storage storage;
+        public AddSpOnCar(Car car, Storage storage)
         {
             InitializeComponent();
-            ListBoxSP.ItemsSource = DataStorag.SpareParts;
+            ListBoxSP.ItemsSource = storage.GetAll();
             this.car = car;
+            this.storage = storage;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine(DataStorag.SpareParts.Count);
+            int countParts = int.Parse(countBox.Text);
+            
             SparePart sp = (SparePart)ListBoxSP.SelectedItem;
-            sp.car_id = car.Id;
-            sp.count-=1;
-            DbTools.UpdateSparePartInDatabase(sp);
+            if(countParts < sp.count)
+            {
+                storage.InsertSparePartOnCar(sp.Id, car.Id, countParts);
+                sp.count -= countParts;
+                storage.UpdateSparePart(sp);
+                this.Close();
+            }
+            else
+            {
+                LableEror.Content = "Not enough parts in stock";
+            }
+            
+           
+        }
+        
+        private void ListBoxSP_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ListBoxSP.SelectedItem != null)
+            {
+                
+                SparePart selectedSparePart = ListBoxSP.SelectedItem as SparePart;
 
-            this.Close();
+               
+                string partType = selectedSparePart.type_sp;
 
 
+                LableType.Content = partType;
+            }
+            else
+            {
 
-
-
+                LableType.Content = "";
+            }
         }
     }
 }

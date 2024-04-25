@@ -9,7 +9,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="View\ListCarPage.xaml.cs">
+    <Compile Update="View\UserControllers\DriverControler.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControllers\SPControler.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Windows\AddSpOnCar.xaml.cs">
@@ -24,18 +27,21 @@
     <Compile Update="View\Windows\AddWindowStorage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\Windows\DriverPage.xaml.cs">
+    <Compile Update="View\UserControllers\EmptyControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Windows\InfoCarWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\Windows\SPpage.xaml.cs">
+    <Compile Update="View\UserControllers\ListCarController.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="View\ListCarPage.xaml">
+    <Page Update="View\UserControllers\DriverControler.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControllers\SPControler.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Windows\AddSpOnCar.xaml">
@@ -50,16 +56,16 @@
     <Page Update="View\Windows\AddWindowStorage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\Windows\DriverPage.xaml">
+    <Page Update="View\UserControllers\EmptyControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Windows\InfoCarWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\Windows\MainWindow.xaml">
+    <Page Update="View\UserControllers\ListCarController.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\Windows\SPpage.xaml">
+    <Page Update="View\Windows\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
