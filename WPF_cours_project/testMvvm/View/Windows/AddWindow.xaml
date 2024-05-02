@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:testMvvm.View.Windows"
         mc:Ignorable="d"
-        Title="AddWindow" Height="500" Width="450" ResizeMode="NoResize" Background="Transparent" WindowStyle="None">
+        Title="AddWindow" Height="500" Width="450" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent" WindowStyle="None">
     <Grid Background="Transparent">
         <Border Background="#F4E8DE" MouseDown="Border_MouseDown" CornerRadius="16" >
 

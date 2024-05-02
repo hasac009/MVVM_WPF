@@ -20,7 +20,7 @@ namespace testMvvm.ViewModels
 {
     internal class MainWindowModel : ViewModel
     {
-        #region Свойства
+        #region Властивості
         
         private static string connectString = $"Host=localhost;Database=MyTestBase;Username=postgres;Password=123";
         Gareg cars = new Gareg(connectString);
@@ -29,33 +29,17 @@ namespace testMvvm.ViewModels
        
 
 
-        private UserControl _Test = new EmptyControl();
+        private UserControl _ShowControler = new EmptyControl();
 
-        public UserControl Test
+        public UserControl ShowControler
         {
-            get => _Test;
-            set => Set(ref _Test, value);
-        }
-
-
-
-        #region Заголовок окна
-
-        private string _Title = "Мой заголовок";
-
-        public string Title
-        {
-            get => _Title;
-            set => Set(ref _Title, value);
+            get => _ShowControler;
+            set => Set(ref _ShowControler, value);
         }
 
         #endregion
 
-
-
-        #endregion
-
-        #region Команды
+        #region Команди
         #region showCarController 
         public ICommand showCarController { get; set; }
 
@@ -63,7 +47,7 @@ namespace testMvvm.ViewModels
 
         private void OnshowCarControllerCommandExecute(object o)
         {
-            Test = new ListCarController(cars);
+            ShowControler = new ListCarController(cars);
             
 
         }
@@ -76,7 +60,7 @@ namespace testMvvm.ViewModels
 
         private void OnshowSpControllerCommandExecute(object o)
         {
-            Test = new SPControler(SparePart);
+            ShowControler = new SPControler(SparePart);
 
 
         }
@@ -89,8 +73,7 @@ namespace testMvvm.ViewModels
 
         private void OnshowDriverControllerCommandExecute(object o)
         {
-            Test = new DriverControler(drivers);
-
+            ShowControler = new DriverControler(drivers);
 
         }
         #endregion
@@ -122,6 +105,21 @@ namespace testMvvm.ViewModels
             Debug.WriteLine(content.Substring(content.IndexOf('№') + 1).Trim());
             cars.del(content.Substring(content.IndexOf('№') + 1).Trim());
             cars.GetAll();
+
+        }
+        #endregion
+
+        #region upgradeCar 
+        public ICommand upgradeCarCommand { get; set; }
+
+        private bool CanupgradeCarCommandExecute(object o) => true;
+
+        private void OnupgradeCarCommandExecute(object o)
+        {
+            string content = o.ToString();
+            string numberCar = content.Substring(content.IndexOf('№') + 1).Trim();
+            UpdateCarWindow window = new UpdateCarWindow(cars.GetCar(numberCar), cars, drivers);
+            window.Show();
 
         }
         #endregion
@@ -206,7 +204,8 @@ namespace testMvvm.ViewModels
             showSpController = new LambdaCommand(OnshowSpControllerCommandExecute, CanshowSpControllerCommandExecute);
             showDriverController = new LambdaCommand(OnshowDriverControllerCommandExecute, CanshowDriverControllerCommandExecute);
 
-            delCarCommand = new LambdaCommand(OndelCarCommandExecute, CandelCarCommandExecute); 
+            delCarCommand = new LambdaCommand(OndelCarCommandExecute, CandelCarCommandExecute);
+            upgradeCarCommand = new LambdaCommand(OnupgradeCarCommandExecute,CanupgradeCarCommandExecute);
         }
         
 

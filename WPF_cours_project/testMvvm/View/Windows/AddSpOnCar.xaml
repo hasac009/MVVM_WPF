@@ -5,18 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:testMvvm.ViewModels"
         mc:Ignorable="d"
-        Title="AddSpOnCar" Height="450" Width="500">
+        Title="AddSpOnCar" Height="450" Width="500" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" Background="Transparent">
     <Window.DataContext>
         <vm:MainWindowModel></vm:MainWindowModel>
     </Window.DataContext>
-    <Grid Background="#F4E8DE">
-        <ListBox x:Name="ListBoxSP" SelectionChanged="ListBoxSP_SelectionChanged" Background="#F4E8DE"   Margin="0,0,0,263" BorderBrush="#FFF4E8DE"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="226,306,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox x:Name="countBox" HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="LableType" Content="Label" HorizontalAlignment="Left" Margin="135,195,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LableEror" Content="" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Foreground="#FFF01717" />
-        <Border BorderBrush="Black" BorderThickness="1"/>
+    <Border Background="#F4E8DE" CornerRadius="15" MouseDown="Border_MouseDown" >
+        <Grid Background="#F4E8DE" Margin="10,39,10,10">
+            <ListBox x:Name="ListBoxSP" SelectionChanged="ListBoxSP_SelectionChanged" Background="#F4E8DE"   Margin="0,20,0,263" BorderBrush="#FFF4E8DE"/>
+            <Button   Style="{StaticResource MyButtonStyle}" Content="Add" Margin="0,274,0,0" Click="Button_Click" Height="38" Width="93" FontSize="22"/>
+            <Button   Style="{StaticResource MyButtonStyle}" Content="x" Margin="453,-36,0,0"  Height="27" Width="27" FontSize="22" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <TextBox x:Name="countBox"  HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="LableType" Content="" HorizontalAlignment="Left" Margin="135,195,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LableEror" Content="" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Foreground="#FFF01717" />
 
 
-    </Grid>
+
+        </Grid>
+    </Border>
+
 </Window>

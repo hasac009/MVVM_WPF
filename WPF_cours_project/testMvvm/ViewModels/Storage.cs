@@ -21,7 +21,8 @@ namespace testMvvm.ViewModels
         public Storage(string connectString)
         {
             connection = new NpgsqlConnection(connectString);
-
+            CreateSparePartsTableIfNotExists();
+            CreateSponcarsTableIfNotExists();
         }
 
         public ObservableCollection<SparePart> GetAll()
@@ -152,6 +153,41 @@ namespace testMvvm.ViewModels
             using (var command = new NpgsqlCommand("UPDATE sp SET status = false WHERE id = @Id", connection))
             {
                 command.Parameters.AddWithValue("@Id", sp.Id);
+                command.ExecuteNonQuery();
+            }
+            connection.Close();
+        }
+
+        public void CreateSparePartsTableIfNotExists()
+        {
+            connection.Open();
+            using (var command = new NpgsqlCommand(
+                @"CREATE TABLE IF NOT EXISTS public.sp
+            (
+                    id SERIAL PRIMARY KEY,
+                    name TEXT NOT NULL,
+                    count INTEGER NOT NULL,
+                    car_id INTEGER NOT NULL DEFAULT 0,
+                    type_sp TEXT,
+                    status BOOLEAN DEFAULT true
+            )", connection))
+            {
+                command.ExecuteNonQuery();
+            }
+            connection.Close();
+        }
+
+        public void CreateSponcarsTableIfNotExists()
+        {
+            connection.Open();
+            using (var command = new NpgsqlCommand(
+                @"CREATE TABLE IF NOT EXISTS public.sponcars
+            (
+                cars_id INTEGER NOT NULL,
+                sp_id INTEGER NOT NULL,
+                count INTEGER DEFAULT 0
+            )", connection))
+            {
                 command.ExecuteNonQuery();
             }
             connection.Close();

@@ -50,5 +50,12 @@ namespace testMvvm.View.Windows
         {
             btn = sender as Button;
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var viewModel = DataContext as MainWindowModel;
+
+            viewModel.upgradeCarCommand.Execute(btn);
+        }
     }
 }

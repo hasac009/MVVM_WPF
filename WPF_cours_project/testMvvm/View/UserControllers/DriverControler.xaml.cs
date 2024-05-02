@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 using testMvvm.Model;
 using testMvvm.ViewModels;
 
+using Excel = Microsoft.Office.Interop.Excel;
+
 namespace testMvvm.View.UserControllers
 {
-    /// <summary>
-    /// Логика взаимодействия для DriverControler.xaml
-    /// </summary>
+   
     public partial class DriverControler : UserControl
     {
         Office drivers;
@@ -43,6 +43,37 @@ namespace testMvvm.View.UserControllers
             {
                 MessageBox.Show("Select a driver from the list.");
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Excel.Application exApp = new Excel.Application();
+            exApp.Workbooks.Add();
+            Excel.Worksheet wsh =(Excel.Worksheet)exApp.ActiveSheet;
+            for (int j = 0; j < MyDG.Columns.Count; j++)
+            {
+                wsh.Cells[1, j + 1] = MyDG.Columns[j].Header; 
+            }
+            for (int i = 0; i < MyDG.Items.Count; i++)
+            {
+                for (int j = 0; j < MyDG.Columns.Count; j++)
+                {
+                    
+                    var item = MyDG.Items[i];
+                    var column = MyDG.Columns[j];
+
+                    var propertyName = column.SortMemberPath; 
+                    var propertyInfo = item.GetType().GetProperty(propertyName); 
+
+                    if (propertyInfo != null)
+                    {
+                        var cellValue = propertyInfo.GetValue(item, null); 
+                        wsh.Cells[i + 2, j + 1] = cellValue?.ToString();
+                    }
+                }
+            }
+            exApp.Visible = true;
+
         }
     }
 }

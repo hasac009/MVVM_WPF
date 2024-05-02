@@ -19,9 +19,11 @@ namespace testMvvm.ViewModels
         public Office(string connectString)
         {
             connection = new NpgsqlConnection(connectString);
-
+            CreateDriversTableIfNotExists();
 
         }
+
+
 
         public ObservableCollection<Driver> GetAll() 
         {
@@ -77,5 +79,22 @@ namespace testMvvm.ViewModels
             connection.Close();
         }
 
+        public void CreateDriversTableIfNotExists()
+        {
+            connection.Open();
+            using (var command = new NpgsqlCommand(
+                @"CREATE TABLE IF NOT EXISTS public.drivers
+                (
+                    id SERIAL PRIMARY KEY,
+                    name TEXT NOT NULL,
+                    phone TEXT NOT NULL,
+                    car_id INTEGER DEFAULT 0,
+                    status BOOLEAN DEFAULT true
+                        )", connection))
+            {
+                command.ExecuteNonQuery();
+            }
+            connection.Close();
+        }
     }
 }

@@ -21,8 +21,9 @@ namespace testMvvm.ViewModels
         public Gareg(string connectString)
         {
             connection = new NpgsqlConnection(connectString);
+            CreateCarsTableIfNotExists();
            
- 
+
         }
 
       
@@ -57,7 +58,7 @@ namespace testMvvm.ViewModels
             }
 
             connection.Close();
-
+            CheckInsuranceDates();
             return Cars;
         }
 
@@ -99,6 +100,55 @@ namespace testMvvm.ViewModels
             connection.Close();
         }
 
-        //  update
+        private void CreateCarsTableIfNotExists()
+        {
+            connection.Open();
+            using (var command = new NpgsqlCommand(
+                @"CREATE TABLE IF NOT EXISTS public.cars3
+                (
+                    id SERIAL PRIMARY KEY,
+                    name TEXT NOT NULL,
+                    number TEXT NOT NULL,
+                    image TEXT NOT NULL,
+                    driver TEXT,
+                    datato TEXT,
+                    datatonext TEXT,
+                    datact TEXT,
+                    datactnext TEXT,
+                    status BOOLEAN DEFAULT true
+                )", connection))
+            {
+                command.ExecuteNonQuery();
+            }
+            connection.Close();
+        }
+
+        public void CheckInsuranceDates()
+        {
+            foreach (var car in Cars)
+            {
+                
+                if (!string.IsNullOrEmpty(car.dataCTnext) && DateTime.TryParse(car.dataCTnext, out DateTime expirationDate))
+                {
+                    if (expirationDate < DateTime.Today)
+                    {
+                        
+                        string message = $"Insurance for car {car.name} with number {car.number} has expired.";
+                        GenerateNotification(message);
+                    }
+                    else if (expirationDate.AddDays(-7) <= DateTime.Today)
+                    {
+                        
+                        string message = $"Insurance for car {car.name} with number {car.number} will expire soon.";
+                        GenerateNotification(message);
+                    }
+                }
+            }
+        }
+        private void GenerateNotification(string message)
+        {
+            
+            MessageBox.Show(message, "Notification", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

@@ -15,8 +15,9 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="568,18,0,0" Width="94" HorizontalAlignment="Left" Content="add" FontSize="20" Command="{Binding CreatAddWindowDriversCommand}" />
-        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="667,18,0,0" Width="93" HorizontalAlignment="Left" Content="Del" FontSize="20" Click="Button_Click"  />
+        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="462,3,0,0" Width="94" HorizontalAlignment="Left" Content="add" FontSize="20" Command="{Binding CreatAddWindowDriversCommand}" />
+        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="561,3,0,0" Width="93" HorizontalAlignment="Left" Content="Del" FontSize="20" Click="Button_Click"  />
+        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="36,3,0,0" Width="94" HorizontalAlignment="Left" Content="Exсel" FontSize="20" Click="Button_Click_1"  />
 
     </Grid>
 </UserControl>

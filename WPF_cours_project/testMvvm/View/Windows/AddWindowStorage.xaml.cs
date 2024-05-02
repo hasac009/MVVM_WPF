@@ -29,18 +29,43 @@ namespace testMvvm.View.Windows
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             SparePart sp = new SparePart();
+            if (string.IsNullOrWhiteSpace(NameSp.Text))
+            {
+                MessageBox.Show("Enter the name.");
+                return;
+            }
             sp.name = NameSp.Text;
-            sp.count = int.Parse(CountSP.Text);
+
+           
+            if (!int.TryParse(CountSP.Text, out int count) || count <= 0)
+            {
+                MessageBox.Show("Please enter a valid positive integer value for the count field.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return; 
+            }
+            sp.count = count;
+
             ComboBoxItem selectedItem = ComboBox1.SelectedItem as ComboBoxItem;
 
             if (selectedItem != null)
             {
-                
                 string selectedContent = selectedItem.Content.ToString();
 
+                
+                if (string.IsNullOrWhiteSpace(selectedContent))
+                {
+                    MessageBox.Show("Please select a type for the SP.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return; 
+                }
                 sp.type_sp = selectedContent;
             }
+            else
+            {
+               
+                MessageBox.Show("Please select a type for the SP.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return; 
+            }
             SparePart.Add(sp);
+            SparePart.GetAll();
             this.Close();
 
         }

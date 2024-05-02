@@ -20,8 +20,9 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <Button Style="{StaticResource MyButtonStyle}" Height="40" Margin="552,0,0,0" Width="111" HorizontalAlignment="Left" Content="add" FontSize="20" Command="{Binding CreatAddWindowSPCommand}"/>
-        <Button Style="{StaticResource MyButtonStyle}" Height="42" Margin="668,0,0,0" Width="100" HorizontalAlignment="Left" Content="del" FontSize="20" Click="Button_Click" />
+        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="462,3,0,0" Width="94" HorizontalAlignment="Left" Content="add" FontSize="20" Command="{Binding CreatAddWindowSPCommand}"/>
+        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="561,3,0,0" Width="93"  HorizontalAlignment="Left" Content="Del" FontSize="20" Click="Button_Click" />
+        <Button Style="{StaticResource MyButtonStyle}" Height="34" Margin="36,3,0,0" Width="94" HorizontalAlignment="Left" Content="Excel" FontSize="20" Click="Button_Click_1"/>
 
     </Grid>
 </UserControl>

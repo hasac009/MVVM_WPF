@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:testMvvm" xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
              StartupUri="View/Windows/MainWindow.xaml">
     <Application.Resources>
+
+        
+
         <Style x:Key="MyButtonStyle4" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="#FF0A5D"/>
@@ -167,6 +170,8 @@
 
 
         <ImageBrush x:Key="carIcon" ImageSource="/View/Image/bigcar.png"/>
+        <ImageBrush x:Key="driverIcon" ImageSource="/View/Image/bigdriver.png"/>
+        <ImageBrush x:Key="spareIcon" ImageSource="/View/Image/bigsp.png"/>
         <ImageBrush x:Key="numberIcon" ImageSource="/View/Image/bignumber.png"/>
         <Style x:Key="tbox_nameCar" TargetType="{x:Type TextBox}">
             <Setter Property="FontSize" Value="16"/>
@@ -330,9 +335,167 @@
             </Setter>
         </Style>
 
+        <Style x:Key="tbox_nameDriver" TargetType="{x:Type TextBox}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Roboto"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="Foreground" Value="#FF0A5d"/>
+            <Setter Property="Padding" Value="0 1 5 4"/>
+            <Setter Property="Margin" Value="0 10 0 0"/>
+            <Setter Property="Cursor" Value="IBeam"/>
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="TxtBorder"
+                        BorderBrush="Orange"
+                       
+                        BorderThickness="2"
+                        CornerRadius="5"
+                        SnapsToDevicePixels="True"
+                        >
+                            <Grid Margin="{TemplateBinding Padding}">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <ScrollViewer x:Name="PART_ContentHost"
+                                      Focusable="False"
+                                      Margin="5 0 0 0"
+                                      HorizontalScrollBarVisibility="Hidden"
+                                      VerticalScrollBarVisibility="Hidden"
+                                      Grid.Column="1"/>
+                                <Border Background="{StaticResource driverIcon}"
+                                BorderThickness="0"
+                                Height="15"
+                                Width="15"
+                                Margin="5 0 0 3"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                ToolTip="Name"
+                                Cursor="Arrow"
+                                Grid.Column="0"/>
+                                <Label x:Name="Watermark"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                               Foreground="Orange"
+                               Visibility="Collapsed"
+                               Padding="5 0 20 0"
+                               Content="{TemplateBinding Tag}"
+                               Grid.Column="1"/>
+                            </Grid>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF0A5d" TargetName="TxtBorder"/>
+                            </Trigger>
+
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF0A5d" TargetName="TxtBorder"/>
+                                <Setter Property="BorderThickness" Value="0.9 0.9 0.9 3" TargetName="TxtBorder"/>
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Text" Value=""/>
+                                </MultiTrigger.Conditions>
+                                <Setter Property="Visibility" Value="Visible" TargetName="Watermark"/>
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
 
 
+            </Setter>
+        </Style>
 
+        <Style x:Key="tbox_nameSP" TargetType="{x:Type TextBox}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Roboto"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="Foreground" Value="#FF0A5d"/>
+            <Setter Property="Padding" Value="0 1 5 4"/>
+            <Setter Property="Margin" Value="0 10 0 0"/>
+            <Setter Property="Cursor" Value="IBeam"/>
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="TxtBorder"
+                 BorderBrush="Orange"
+                
+                 BorderThickness="2"
+                 CornerRadius="5"
+                 SnapsToDevicePixels="True"
+                 >
+                            <Grid Margin="{TemplateBinding Padding}">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <ScrollViewer x:Name="PART_ContentHost"
+                               Focusable="False"
+                               Margin="5 0 0 0"
+                               HorizontalScrollBarVisibility="Hidden"
+                               VerticalScrollBarVisibility="Hidden"
+                               Grid.Column="1"/>
+                                <Border Background="{StaticResource spareIcon}"
+                         BorderThickness="0"
+                         Height="15"
+                         Width="15"
+                         Margin="5 0 0 3"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         ToolTip="Name"
+                         Cursor="Arrow"
+                         Grid.Column="0"/>
+                                <Label x:Name="Watermark"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Foreground="Orange"
+                        Visibility="Collapsed"
+                        Padding="5 0 20 0"
+                        Content="{TemplateBinding Tag}"
+                        Grid.Column="1"/>
+                            </Grid>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF0A5d" TargetName="TxtBorder"/>
+                            </Trigger>
+
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF0A5d" TargetName="TxtBorder"/>
+                                <Setter Property="BorderThickness" Value="0.9 0.9 0.9 3" TargetName="TxtBorder"/>
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Text" Value=""/>
+                                </MultiTrigger.Conditions>
+                                <Setter Property="Visibility" Value="Visible" TargetName="Watermark"/>
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+
+
+            </Setter>
+        </Style>
 
         <Style x:Key="tbox_Calendar" TargetType="{x:Type TextBox}">
             <Setter Property="FontSize" Value="11"/>

@@ -36,6 +36,9 @@
     <Compile Update="View\UserControllers\ListCarController.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Windows\UpdateCarWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\UserControllers\DriverControler.xaml">
@@ -66,6 +69,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Windows\UpdateCarWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

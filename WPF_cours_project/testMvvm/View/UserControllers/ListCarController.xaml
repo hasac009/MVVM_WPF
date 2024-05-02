@@ -24,10 +24,11 @@
                     </ItemsControl.ItemsPanel>
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                        <Button  Style="{StaticResource MyButtonStyle4}" Command="{Binding DataContext.CreatInfoCarWindow, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" CommandParameter="{Binding number}" MouseRightButtonDown="Button_MouseRightButtonDown" >
+                        <Button  Style="{StaticResource MyButtonStyle4}" Command="{Binding DataContext.CreatInfoCarWindow, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" CommandParameter="{Binding number}" MouseRightButtonDown="Button_MouseRightButtonDown" Margin="4" >
                             <Button.ContextMenu>
                                 <ContextMenu>
                                     <MenuItem Header="Delete" Click="Button_Click_1" />
+                                    <MenuItem Header="Update" Click="MenuItem_Click" />
                                 </ContextMenu>
                             </Button.ContextMenu>
                             <Button.Background>

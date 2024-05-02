@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:testMvvm.View.Windows"
         xmlns:vm="clr-namespace:testMvvm.ViewModels"
         mc:Ignorable="d"
-        Title="InfoCarWindow" ResizeMode="NoResize" Height="450" Width="800" WindowStyle="None" Background="Transparent" >
+        Title="InfoCarWindow" ResizeMode="NoResize" AllowsTransparency="True" Height="450" Width="800" WindowStyle="None" Background="Transparent" >
     <Window.DataContext>
         <vm:MainWindowModel/>
     </Window.DataContext>
@@ -37,11 +37,11 @@
                         <ColumnDefinition Width="17*"/>
                         <ColumnDefinition Width="15*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Content="Водитель : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="26" Width="70"/>
-                    <Label Content="Дата ТО : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Margin="10,0,0,0" Height="26" Width="63"/>
-                    <Label Content="Дата след. ТО : " HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="10,14,0,0" Height="26" Width="94"/>
-                    <Label Content="Дата СТ : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Margin="10,0,0,0" Height="26" Width="62"/>
-                    <Label Content="Дата след. CТ : " HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="4" Margin="10,14,0,0" Height="26" Width="94"/>
+                    <Label Content="Driver : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="26" Width="70"/>
+                    <Label Content="service date : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Margin="10,0,0,0" Height="26" Width="94"/>
+                    <Label Content="next service date : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3" Margin="10,0,0,0" Height="26" Width="118"/>
+                    <Label Content="date of insurance : " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Margin="10,0,0,0" Height="26" Width="118"/>
+                    <Label Content="next insurance date: " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="4" Margin="10,0,0,0" Height="26" Width="131"/>
                     <Label x:Name="LableDriverName" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
                     <Label x:Name="LableDateTO" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="1"/>
                     <Label x:Name="LableDateCT" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="2"/>
@@ -50,17 +50,18 @@
 
                 </Grid>
 
-                <DataGrid x:Name="MyDG"  
+                <DataGrid x:Name="MyDG"   Height="131" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
                     RowStyle="{DynamicResource DataGridRowStyle1}"
                     ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"
                     CellStyle="{DynamicResource DataGridCellStyle1}"
-                    Style="{DynamicResource DataGridStyle1}" Margin="10,313,83,-263" >
+                    Style="{DynamicResource DataGridStyle1}" Margin="11,315,130,0"  >
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Name" Binding="{Binding name}" IsReadOnly="True"/>
                         <DataGridTextColumn Header="Count" Binding="{Binding count}" IsReadOnly="True"/>
                     </DataGrid.Columns>
 
                 </DataGrid>
+
                 <Button  Style="{StaticResource MyButtonStyle}" Content="add Spart" HorizontalAlignment="Left" Margin="685,316,0,0" Click="Button_Click_1" Height="30" Width="93" FontSize="15"/>
             </Grid>
         </Border>

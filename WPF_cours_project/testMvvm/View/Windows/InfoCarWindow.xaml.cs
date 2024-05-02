@@ -68,7 +68,13 @@ namespace testMvvm.View.Windows
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             AddSpOnCar window = new AddSpOnCar(car, storage);
+            window.Closed += (sender, args) =>
+            {
+                storage.GetAll();
+                MyDG.ItemsSource = storage.GetPartsByCarId(car.Id);
+            };
             window.Show();
+
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

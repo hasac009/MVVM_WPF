@@ -197,3 +197,7 @@ C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-wind
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\UserControllers\SPControler.baml
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\UserControllers\EmptyControl.g.cs
 C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\UserControllers\EmptyControl.baml
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\testMvvm.csproj.ResolveComReference.cache
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\UpdateCarWindow.g.cs
+C:\Users\Nazar\Desktop\MVVM_WPF\WPF_cours_project\testMvvm\obj\Debug\net7.0-windows\View\Windows\UpdateCarWindow.baml

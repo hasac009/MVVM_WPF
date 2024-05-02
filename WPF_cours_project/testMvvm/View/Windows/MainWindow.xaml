@@ -6,7 +6,7 @@
         xmlns:vm="clr-namespace:testMvvm.ViewModels"
         xmlns:local="clr-namespace:testMvvm"
         mc:Ignorable="d"
-        Title="{Binding Title}" Height="600" Width="950" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+        Title="" Height="600" Width="950" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
    <Window.DataContext>
         <vm:MainWindowModel/>
     </Window.DataContext>
@@ -51,7 +51,7 @@
         </Border>
         
         <Border Grid.Column="1" Background="#DAD1BD" MouseDown="Border_MouseDown" CornerRadius="0 10 10 0">
-            <ContentPresenter  Name="contentP" Margin="0,72,0,0" Content="{Binding Test}"></ContentPresenter>
+            <ContentPresenter  Name="contentP" Margin="0,72,0,0" Content="{Binding ShowControler}"></ContentPresenter>
     
         </Border>
 

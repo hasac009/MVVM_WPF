@@ -33,19 +33,33 @@ namespace testMvvm.View.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(countBox.Text))
+            {
+                MessageBox.Show("Enter the count.");
+                return;
+            }
             int countParts = int.Parse(countBox.Text);
             
             SparePart sp = (SparePart)ListBoxSP.SelectedItem;
-            if(countParts < sp.count)
+            if (countParts <= 0)
+            {
+                LableEror.Content = "The value cannot be negative or zero.";
+            }
+            else if(countParts <= sp.count)
             {
                 storage.InsertSparePartOnCar(sp.Id, car.Id, countParts);
                 sp.count -= countParts;
                 storage.UpdateSparePart(sp);
+                if(sp.count == 0)
+                {
+                    storage.del(sp);
+                }
+                
                 this.Close();
             }
             else
             {
-                LableEror.Content = "Not enough parts in stock";
+                LableEror.Content = "Not enough parts in stock.";
             }
             
            
@@ -68,6 +82,19 @@ namespace testMvvm.View.Windows
             {
 
                 LableType.Content = "";
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
             }
         }
     }
